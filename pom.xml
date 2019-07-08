@@ -14,8 +14,8 @@
   <name>Activiti Cloud :: Activiti Processing Cloud Connector</name>
   <properties>
     <stanford-corenlp.version>3.9.1</stanford-corenlp.version>
-    <java.version>11</java.version>
-    <activiti-cloud-dependencies.version>7.1.86</activiti-cloud-dependencies.version>
+    <java.version>8</java.version>
+    <activiti-cloud-dependencies.version>7.1.0.M2</activiti-cloud-dependencies.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
     <maven-failsafe-plugin.version>3.0.0-M3</maven-failsafe-plugin.version>
@@ -119,7 +119,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven-compiler-plugin.version}</version>
         <configuration>
-          <release>${java.version}</release>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
           <showDeprecation>true</showDeprecation>
           <showWarnings>true</showWarnings>
           <optimize>true</optimize>
